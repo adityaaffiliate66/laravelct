@@ -18,17 +18,17 @@ class CreateCoinsTable extends Migration
             $table->string('coin_id');
             $table->string('coin_name');
             $table->string('coin_symbol');
-            $table->integer('coin_rank');
-            $table->float('price_usd');
-            $table->float('price_btc');
-            $table->bigInteger('volume_usd_24h');
-            $table->bigInteger('market_cap_usd');
-            $table->bigInteger('available_supply');
-            $table->bigInteger('total_supply');
-            $table->bigInteger('max_supply')->nullable();;
-            $table->float('percent_change_1h');
-            $table->float('percent_change_24h');
-            $table->float('percent_change_7d');
+            $table->string('coin_rank');
+            $table->string('price_usd');
+            $table->string('price_btc');
+            $table->string('volume_usd_24h');
+            $table->string('market_cap_usd');
+            $table->string('available_supply');
+            $table->string('total_supply');
+            $table->string('max_supply')->nullable();;
+            $table->string('percent_change_1h');
+            $table->string('percent_change_24h');
+            $table->string('percent_change_7d');
             $table->timestamps();
         });
     }
