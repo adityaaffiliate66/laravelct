@@ -17,4 +17,7 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/','GuzzleController@getAllCryptoPrice');
+Route::get('/add','GuzzleController@getAllCryptoPrice');
+
+Route::get('/update','GuzzleController@updateAllCryptoPrice');
+
