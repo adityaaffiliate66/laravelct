@@ -18,7 +18,7 @@ class CreateCoinsTable extends Migration
             $table->string('coin_id');
             $table->string('coin_name');
             $table->string('coin_symbol');
-            $table->string('coin_rank');
+            $table->integer('coin_rank');
             $table->string('price_usd');
             $table->string('price_btc');
             $table->string('volume_usd_24h');
