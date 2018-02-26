@@ -39,7 +39,7 @@ class fetchCrypto extends Command
     public function handle()
     {
         //
-        GuzzleController::getAllCryptoPrice();
+        GuzzleController::updateAllCryptoPrice();
 
     }
 }
